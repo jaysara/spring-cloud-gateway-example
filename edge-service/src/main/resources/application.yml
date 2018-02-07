@@ -1,0 +1,17 @@
+
+spring:
+  application:
+    name: edge-service
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+  client:
+#    serviceUrl:
+#      defaultZone: https://eureka-server-amplifiable-hypoplasia.apps.nonprod-mpn.ro11.allstate.com/eureka/
+    healthcheck:
+      enabled: true
+    lease:
+      duration: 5
+server:
+  port: 8081
