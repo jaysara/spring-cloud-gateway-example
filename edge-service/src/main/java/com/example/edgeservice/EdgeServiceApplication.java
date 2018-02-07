@@ -74,7 +74,7 @@ public class EdgeServiceApplication {
 					.uri("http://start.spring.io:80/")
 		).route("lb",r -> r.path("/lb")
 				//.uri("http://start.spring.io:80/")
-				.uri("/customer-service/customers")
+				.uri("lb://customer-service/customers")
 
 		).route("cf1",r -> r.path("/cf1")
 				.filter((exchange,chain) ->
